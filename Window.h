@@ -1,4 +1,5 @@
 #pragma once
+#include <GL\glew.h>
 #include <SDL.h>
 #include <exception>
 #include <iostream>
@@ -12,11 +13,19 @@ class Window
 	Uint32 mouseState = 0;
 	int mouseX = 0, mouseY = 0;
 	SDL_Event event;
+	SDL_GLContext context;
+
+	struct Object {
+		GLuint vertexArrayObject;
+		GLuint vertexBufferObject;
+	} object;
+
 public:
 	Window();
 	~Window();
 	void updateWindowState();
 	bool shouldWindowClose();
 	void loop();
+	void draw();
 };
 
