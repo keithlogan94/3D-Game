@@ -2,8 +2,9 @@
 
 
 
-Window::Window()
+Window::Window(const char* windowName)
 {
+	this->windowName = windowName;
 }
 
 
