@@ -1,0 +1,1 @@
+3D-Game is a project to practice the basics of OpenGL initialized with SDL2. It is a learning project. In the future it may morph into a game that I have in mind to build.
