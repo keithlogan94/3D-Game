@@ -3,6 +3,7 @@
 #include <SDL.h>
 #include <exception>
 #include <iostream>
+#include "Shader.h"
 using namespace std;
 class Window
 {
@@ -18,6 +19,7 @@ class Window
 	struct Object {
 		GLuint vertexArrayObject;
 		GLuint vertexBufferObject;
+		Shader * shader = nullptr;
 	} object;
 
 public:
